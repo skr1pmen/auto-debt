@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Arimo", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #dedede;
+}
+
+.bubbleOne {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background: linear-gradient(112deg, #00aaf3, #64c0e8, #ade0f5);
+    box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc;
+    position: absolute;
+    right: -6%;
+    top: -42%;
+}
+
+.bubbleTwo {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    background: linear-gradient(47deg, #1eda77, #45a8e7, #a1daf7);
+    box-shadow: inset 0 0 10px #fff, inset 5px 0 46px #eaf5fc;
+    position: absolute;
+    right: 4%;
+    top: 18%;
+    z-index: 1;
+}
+
+.bubbleThree {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: linear-gradient(125deg, #80ffdb, #e787e4, #ff0054);
+    box-shadow: inset 0 0 20px #fff;
+    position: absolute;
+    right: 21%;
+    top: 33%;
+    z-index: 2;
+}
+
+.bubbleFour {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background: linear-gradient(125deg, #f70b6c, #f76e11);
+    box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc;
+    position: absolute;
+    bottom: -47%;
+    right: -10%;
+}
+
+.bubbles {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    backdrop-filter: blur(10px);
+    /*background: #fff;*/
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);*/
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+.heroBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 75px);
+}
+
+.heroImg img {
+    height: 70vh;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    color: #005ac7;
+    font-size: 107px;
+    font-weight: bold;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #005ac7;
+    text-transform: uppercase;
+    border: 3px solid #005ac7;
+    width: max-content;
+    border-radius: 32px;
+    transition: background .3s linear;
+}
+
+.btn:hover {
+    background: #005ac7;
+    color: #fff;
+}
