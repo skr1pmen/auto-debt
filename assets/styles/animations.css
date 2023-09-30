@@ -1,0 +1,33 @@
+@keyframes bubbleFirst {
+    to{
+        transform: translate(50px);
+    }
+    from{
+        transform: translate(0px,50px) rotate(90deg);
+    }
+}
+@keyframes bubbleSecond {
+    from{
+        transform: translate(-15px, -15px) rotate(97deg);
+    }
+}
+@keyframes bubbleThree {
+    from{
+        transform: translate(55px, -75px) scale(110%) rotate(124deg);
+    }
+}
+@keyframes bubbleFour {
+    from{
+        transform: translate(15px, -5px) scale(87%) rotate(94deg);
+    }
+}
+@keyframes header {
+    0%{
+        opacity: 0;
+        top: -75px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
